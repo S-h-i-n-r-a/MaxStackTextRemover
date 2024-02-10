@@ -13,7 +13,7 @@ namespace MaxStackTextRemover
     {
         public const string Guid = "dev.shinra.nostackmaxdisp";
         public const string Name = "Max Stack Text Remover";
-        public const string Vers = "2024.210.1413";
+        public const string Vers = "2024.210.1622";
 
         public static ConfigEntry<string> TextAlignment;
 
