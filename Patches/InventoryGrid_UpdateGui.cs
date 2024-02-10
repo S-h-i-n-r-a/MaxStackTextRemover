@@ -18,8 +18,8 @@ namespace MaxStackTextRemover.Patches
                 if (allItem.m_shared.m_maxStackSize > 1)
                 {
                     var element = __instance.GetElement(allItem.m_gridPos.x, allItem.m_gridPos.y, width);
-                    element.m_amount.text = allItem.m_stack.ToString();
-                    element.m_amount.alignment = TextAlignmentOptions.Right;
+                    element.m_amount.text = $" {allItem.m_stack} ";
+                    element.m_amount.alignment = Plugin.StackTextAlignment;
                 }
             }
         }
