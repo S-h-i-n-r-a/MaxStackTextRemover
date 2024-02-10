@@ -19,6 +19,7 @@ namespace MaxStackTextRemover
 
         internal static ManualLogSource UnityLogger;
         internal static TextAlignmentOptions StackTextAlignment;
+        internal static string Margin;
 
 
         private void Awake()
@@ -41,14 +42,17 @@ namespace MaxStackTextRemover
             {
                 case "left":
                     StackTextAlignment = TextAlignmentOptions.Left;
+                    Margin = "<margin-left=3px>";
                     break;
 
                 case "center":
                     StackTextAlignment = TextAlignmentOptions.Center;
+                    Margin = string.Empty;
                     break;
 
                 default:
                     StackTextAlignment = TextAlignmentOptions.Right;
+                    Margin = "<margin-right=3px>";
                     break;
             }
         }
